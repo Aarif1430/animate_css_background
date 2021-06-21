@@ -9,7 +9,8 @@
 }
 
 .demo .large-header {
-   background-image: url("simulation.png");
+/*    background-image: url("simulation.png"); */
+   background-image: none;
 }
 
 .main-title {
