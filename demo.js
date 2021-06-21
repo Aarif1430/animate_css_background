@@ -28,10 +28,10 @@
 
     // create points
     points = [];
-    for (var x = 0; x < width; x = x + width / 20) {
-      for (var y = 0; y < height; y = y + height / 20) {
-        var px = x + (Math.random() * width) / 20;
-        var py = y + (Math.random() * height) / 20;
+    for (var x = 0; x < width; x = x + width / 30) {
+      for (var y = 0; y < height; y = y + height / 30) {
+        var px = x + (Math.random() * width) / 30;
+        var py = y + (Math.random() * height) / 30;
         var p = { x: px, originX: px, y: py, originY: py };
         points.push(p);
       }
@@ -171,7 +171,7 @@
       ctx.beginPath();
       ctx.moveTo(p.x, p.y);
       ctx.lineTo(p.closest[i].x, p.closest[i].y);
-      ctx.strokeStyle = "rgba(156,217,249," + p.active + ")";
+      ctx.strokeStyle = "rgba(255,255,255," + p.active + ")";
       ctx.stroke();
     }
   }
@@ -190,7 +190,7 @@
       if (!_this.active) return;
       ctx.beginPath();
       ctx.arc(_this.pos.x, _this.pos.y, _this.radius, 0, 2 * Math.PI, false);
-      ctx.fillStyle = "rgba(156,217,249," + _this.active + ")";
+      ctx.fillStyle = "rgb(255, 0, 0," + _this.active + ")";
       ctx.fill();
     };
   }
